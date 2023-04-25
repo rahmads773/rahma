@@ -22,7 +22,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script defer src="mode.js"></script>
     <script defer src="main.js"></script>
+    
   </head>
   <body>
     <!-- start loader -->
@@ -35,12 +37,18 @@
       </div>
     </div>
     <!-- end loader -->
+     <!-- start dark mode  -->
+     <div class="mode">
+      <i class="fa-solid fa-moon moon"></i>
+      <i class="fa-solid fa-sun sun"></i>
+    </div>
+    <!-- end dark mode  -->
     <!-- start header  -->
     <header>
       <div class="container">
         <ul class="links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about" class="dark-a">About</a></li>
+          <li><a href="#portfolio" class="dark-a">Portfolio</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -123,10 +131,10 @@
           <div class="ball">
             <div class="content">
               <h3>Css</h3>
-              <span>80%</span>
+              <span>85%</span>
             </div>
             <svg class="range">
-              <circle cx="70" cy="70" r="65" stroke-linecap="round"  data-range="330"></circle>
+              <circle cx="70" cy="70" r="65" stroke-linecap="round"  data-range="350"></circle>
             </svg>
           </div>
           <div class="ball">
@@ -156,6 +164,15 @@
               </svg>
             </div>
           </div>
+          <div class="ball">
+            <div class="content">
+              <h3>Sass</h3>
+              <span>80%</span>
+              <svg class="range">
+                <circle cx="70" cy="70" r="65" stroke-linecap="round"  data-range="330"></circle>
+              </svg>
+            </div>
+          </div>
         </div>
         <img src="webp-img/skills-img.webp" alt="skills">
       </div>
@@ -172,7 +189,7 @@
               <img src="portfolio/to-do list.svg" alt="to-do">
               <h3>TO-DO list</h3>
             </div>
-              <div class="overlay one">
+              <div class="overlay">
                 <div class="text">
                   <p>designed by me</p>
                   <a href="https://rahmads773.github.io/to-do-list/" target="_blank">Check it out</a>
@@ -185,7 +202,7 @@
               <img src="portfolio/landing-page.svg" alt="landing">
               <h3>Landing Page</h3>
             </div>
-            <div class="overlay two">
+            <div class="overlay">
               <div class="text">
                 <p>designed by Osama Elzero</p>
                 <a href="https://rahmads773.github.io/elzero-template3/" target="_blank">Check it out</a>
@@ -198,7 +215,7 @@
                 <img src="portfolio/random-template.svg" alt="random">
                 <h3>Random Template</h3>
               </div>
-              <div class="overlay three">
+              <div class="overlay">
                 <div class="text">
                   <p>Designed by Osama Elzero</p>
                   <a href="https://rahmads773.github.io/Agency/" target="_blank">Check it out</a>
@@ -211,7 +228,7 @@
                   <img src="portfolio/ecommerce.svg" alt="ecommerce">
                   <h3>E-commerce</h3>
                 </div>
-                <div class="overlay four">
+                <div class="overlay">
                   <div class="text">
                     <p>Designed by me</p>
                     <a href="https://rahmads773.github.io/Lopie/" target="_blank">Check it out</a>
@@ -219,6 +236,58 @@
                 
                 </div>
                  </div>
+                 <div class="box blue">
+                  <div class="content">
+                    <img src="portfolio/drugs.png" alt="random">
+                    <h3>Educational website</h3>
+                  </div>
+                  <div class="overlay">
+                    <div class="text">
+                      <p>Designed by Me</p>
+                      <a href="https://helpph.ml/" target="_blank">Check it out</a>
+                    </div>
+                  
+                  </div>
+                   </div>
+                   <div class="box pink">
+                    <div class="content">
+                      <img src="portfolio/pawprint.png" alt="ecommerce">
+                      <h3>Pet Shop</h3>
+                    </div>
+                    <div class="overlay">
+                      <div class="text">
+                        <p>Designed by Mr web Designer</p>
+                        <a href="https://rahmads773.github.io/pet-shop/" target="_blank">Check it out</a>
+                      </div>
+                    
+                    </div>
+                     </div>
+                     <div class="box blue">
+                      <div class="content">
+                        <img src="portfolio/delivery.png" alt="random">
+                        <h3>Delivery website</h3>
+                      </div>
+                      <div class="overlay">
+                        <div class="text">
+                          <p>Free Template</p>
+                          <a href="https://rahmads773.github.io/delivery/" target="_blank">Check it out</a>
+                        </div>
+                      
+                      </div>
+                       </div>
+                       <div class="box pink">
+                        <div class="content">
+                          <img src="portfolio/dashboard.png" alt="ecommerce">
+                          <h3>Dashboard</h3>
+                        </div>
+                        <div class="overlay">
+                          <div class="text">
+                            <p>Designed by Osama Elzero</p>
+                            <a href="https://rahmads773.github.io/dashboard/" target="_blank">Check it out</a>
+                          </div>
+                        
+                        </div>
+                         </div>
       </div>
     </div>
     <!-- end portfolio -->
