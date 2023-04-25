@@ -14,6 +14,7 @@
   }
   body {
     font-family: "Cairo", sans-serif;
+    transition: var(--main-transition);
   }
   ul {
     list-style: none;
@@ -114,6 +115,40 @@ i{
 opacity: 0;
 transition: var(--secondary-transition);
 }
+/* start dark mode */
+.mode{
+  position: fixed;
+  left: 0;
+  top: 50%;
+  border-radius: 0 20px 20px 0;
+  z-index: 8;
+  cursor: pointer;
+}
+/* @media (max-width:400px) {
+  .mode{
+    top: 65%;
+  }
+} */
+.mode i{
+  font-size: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 20px 20px 0;
+  transform: rotate(0) !important;
+}
+.mode .moon{
+  color: #fff;
+  background-color: var(--myblack);
+}
+.mode .sun{
+  color: #000;
+  background-color: #fff ;
+  opacity: 1;
+  display: none;
+}
+/* end dark mode */
 /* end components */
 /* start loader */
 .loader{
@@ -877,3 +912,49 @@ transform: rotate(45deg);
   }
 }
 /* end animation */
+
+
+/* start dark mode */
+.dark{
+  background-color: var(--myblack);
+  color: #fff;
+}
+.dark header .links li a{
+  color: #fff;
+}
+
+  .dark header .links.active li a{
+    color: #313131 ;
+  }
+
+@media (min-width:556px) {
+  .dark header::before{
+    display: none;
+  }
+}
+.dark .about .text span{
+  color: #fff;
+}
+.dark .skills .skill-balls .ball span{
+  color: var(--myblack);
+}
+.dark .portfolio .box h3{
+  color: var(--myblack);
+}
+.dark .overlay::before{
+background-color: #dadadab5;
+}
+.dark .overlay a{
+  color: #2E3A4D ;
+  text-decoration-color: #2E3A4D ;
+}
+.dark .contact .text .email a{
+  color: #FFB4BB;
+}
+.dark .title{
+  color: #fff;
+}
+.dark .mini-title{
+  color: #dddd;
+}
+/* end dark mode */
